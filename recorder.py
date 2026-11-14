@@ -20,9 +20,7 @@ BET_TOPICS = {"0x438122d8cff518d18388099a5181f0d17a12b4f1b55faedf6e4a6acee0060c1
               "0x0d8c1fe3e67ab767116a81f122b83c2557a8c2564019cb7c4f83de1aeb1f1f0d": "bear"}
 PRICE_SOURCES = {
     "binance_vision": {"url": "wss://data-stream.binance.vision/ws/bnbusdt@trade", "sub": None},
-    "binance_spot":   {"url": "wss://stream.binance.com:9443/ws/bnbusdt@trade", "sub": None},
-    "binance_perp":   {"url": "wss://fstream.binance.com/ws/bnbusdt@aggTrade", "sub": None},
-    "binance_us":     {"url": "wss://stream.binance.us:9443/ws/bnbusdt@trade", "sub": None},
+    # binance.com / fstream / binance.us: μπλοκαρισμένα ή νεκρά από τους runners των ΗΠΑ (δοκιμή 14/11/2026: 451 / timeouts)
     "okx":            {"url": "wss://ws.okx.com:8443/ws/v5/public", "sub": {"op": "subscribe", "args": [{"channel": "trades", "instId": "BNB-USDT"}]}},
     "bybit":          {"url": "wss://stream.bybit.com/v5/public/spot", "sub": {"op": "subscribe", "args": ["publicTrade.BNBUSDT"]}},
     "gate":           {"url": "wss://api.gateio.ws/ws/v4/", "sub": {"time": 0, "channel": "spot.trades", "event": "subscribe", "payload": ["BNB_USDT"]}},
@@ -175,10 +173,15 @@ def price_source(name, cfg, out):
             if cfg["sub"]: ws.send(json.dumps(cfg["sub"]))
             last_ping = time.monotonic()
             while not STOP.is_set():
+                if name == "binance_vision" and time.monotonic() - last_ping > 60: ws.ping(); last_ping = time.monotonic()
                 if name in ("okx",) and time.monotonic() - last_ping > 20: ws.send("ping"); last_ping = time.monotonic()
                 if name == "bybit" and time.monotonic() - last_ping > 20: ws.send(json.dumps({"op": "ping"})); last_ping = time.monotonic()
                 if name == "gate" and time.monotonic() - last_ping > 20: ws.send(json.dumps({"time": int(time.time()), "channel": "spot.ping"})); last_ping = time.monotonic()
-                raw = ws.recv()
+                try:
+                    raw = ws.recv()
+                except websocket.WebSocketTimeoutException:
+                    st["idle"] = st.get("idle", 0) + 1
+                    continue  # λίγες συναλλαγές: δεν είναι σφάλμα, στέλνουμε ping στον επόμενο κύκλο
                 if raw in ("pong", ""): continue
                 msg = json.loads(raw); trades = []
                 if name.startswith("binance"):
