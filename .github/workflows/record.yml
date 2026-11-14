@@ -1,0 +1,34 @@
+name: record
+on:
+  schedule:
+    - cron: "*/15 * * * *"
+  workflow_dispatch:
+    inputs:
+      minutes:
+        description: "Πόσα λεπτά να τρέξει"
+        default: "5"
+concurrency:
+  group: recorder
+  cancel-in-progress: false
+permissions:
+  contents: write
+jobs:
+  rec:
+    runs-on: ubuntu-latest
+    timeout-minutes: 358
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - name: record
+        run: python recorder.py --minutes "${{ github.event.inputs.minutes || '345' }}"
+      - name: commit data
+        if: always()
+        run: |
+          git config user.name "pancake-recorder"
+          git config user.email "pancake-recorder@users.noreply.github.com"
+          git add data
+          git commit -m "data $(date -u +%Y-%m-%dT%H:%MZ)" || exit 0
+          for i in 1 2 3 4 5; do git pull --rebase -X theirs && git push && break; sleep 10; done
