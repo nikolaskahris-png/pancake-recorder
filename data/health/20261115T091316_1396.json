@@ -1,0 +1,59 @@
+{
+ "started": "2026-11-15T09:13:16.466422+00:00",
+ "rpc_errors": 7697,
+ "rpc_calls": 117799,
+ "logs": 5132,
+ "bets": 1776,
+ "tx": 1776,
+ "heads": 37782,
+ "pool_snaps": 3685,
+ "max_poll_gap_s": 4.67,
+ "max_block_lag": 21,
+ "price": {
+  "binance_vision": {
+   "msgs": 143890,
+   "connects": 1,
+   "fails": 0,
+   "last_error": null,
+   "idle": 3
+  },
+  "okx": {
+   "msgs": 8023,
+   "connects": 1,
+   "fails": 0,
+   "last_error": null,
+   "idle": 840
+  },
+  "bybit": {
+   "msgs": 8713,
+   "connects": 1,
+   "fails": 0,
+   "last_error": null,
+   "idle": 781
+  },
+  "gate": {
+   "msgs": 6442,
+   "connects": 1,
+   "fails": 0,
+   "last_error": null,
+   "idle": 222
+  }
+ },
+ "errors": [
+  "12:00:27 chain: eth_getLogs failed: {'code': -32602, 'message': 'block range extends beyond current head block: requested 133731920, head 133731915'}",
+  "12:00:34 chain: eth_getLogs failed: {'code': -32602, 'message': 'block range extends beyond current head block: requested 133731937, head 133731931'}",
+  "13:20:34 chain: eth_getLogs failed: {'code': -32602, 'message': 'block range extends beyond current head block: requested 133742599, head 133742596'}",
+  "13:20:38 chain: eth_getLogs failed: {'code': -32005, 'message': 'limit exceeded'}",
+  "13:20:46 chain: eth_getLogs failed: {'code': -32602, 'message': 'block range extends beyond current head block: requested 133742627, head 133742626'}",
+  "13:20:51 chain: eth_getLogs failed: {'code': -32005, 'message': 'limit exceeded'}",
+  "13:20:57 chain: eth_getLogs failed: {'code': -32602, 'message': 'block range extends beyond current head block: requested 133742651, head 133742645'}",
+  "14:40:56 chain: eth_getLogs failed: {'code': -32602, 'message': 'block range extends beyond current head block: requested 133753310, head 133753306'}",
+  "14:41:06 chain: eth_getLogs failed: {'code': -32602, 'message': 'block range extends beyond current head block: requested 133753332, head 133753331'}"
+ ],
+ "rounds_started": 69,
+ "run": "20261115T091316_1396",
+ "proxy": "0x0567f2323251f0aab15c8dfb1967e4e8a7d42aee",
+ "aggregator": "0xa6e8fee84f9bd528ad71917c9ddbb1fd3214f280",
+ "minutes": 345.0,
+ "ended": "2026-11-15T14:58:19.644437+00:00"
+}
