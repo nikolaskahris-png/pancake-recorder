@@ -1,0 +1,49 @@
+{
+ "started": "2026-11-15T21:33:53.860601+00:00",
+ "rpc_errors": 980,
+ "rpc_calls": 101999,
+ "logs": 5087,
+ "bets": 1980,
+ "tx": 1980,
+ "heads": 42586,
+ "pool_snaps": 3058,
+ "max_poll_gap_s": 10.37,
+ "max_block_lag": 22,
+ "price": {
+  "binance_vision": {
+   "msgs": 111939,
+   "connects": 1,
+   "fails": 0,
+   "last_error": null,
+   "idle": 14
+  },
+  "okx": {
+   "msgs": 5876,
+   "connects": 1,
+   "fails": 0,
+   "last_error": null,
+   "idle": 1009
+  },
+  "bybit": {
+   "msgs": 7125,
+   "connects": 1,
+   "fails": 0,
+   "last_error": null,
+   "idle": 833
+  },
+  "gate": {
+   "msgs": 5856,
+   "connects": 1,
+   "fails": 0,
+   "last_error": null,
+   "idle": 256
+  }
+ },
+ "errors": [],
+ "rounds_started": 69,
+ "run": "20261115T213353_5125",
+ "proxy": "0x0567f2323251f0aab15c8dfb1967e4e8a7d42aee",
+ "aggregator": "0xa6e8fee84f9bd528ad71917c9ddbb1fd3214f280",
+ "minutes": 345.0,
+ "ended": "2026-11-16T03:18:57.268371+00:00"
+}
