@@ -1,0 +1,51 @@
+{
+ "started": "2026-11-19T18:06:05.921967+00:00",
+ "rpc_errors": 3845,
+ "rpc_calls": 123048,
+ "logs": 5547,
+ "bets": 2216,
+ "tx": 2138,
+ "heads": 41586,
+ "pool_snaps": 3672,
+ "max_poll_gap_s": 4.33,
+ "max_block_lag": 10,
+ "price": {
+  "binance_vision": {
+   "msgs": 88367,
+   "connects": 1,
+   "fails": 0,
+   "last_error": null,
+   "idle": 3
+  },
+  "okx": {
+   "msgs": 11834,
+   "connects": 2,
+   "fails": 1,
+   "last_error": "Connection to remote host was lost.",
+   "idle": 60
+  },
+  "bybit": {
+   "msgs": 7578,
+   "connects": 1,
+   "fails": 0,
+   "last_error": null,
+   "idle": 756
+  },
+  "gate": {
+   "msgs": 6113,
+   "connects": 1,
+   "fails": 0,
+   "last_error": null,
+   "idle": 199
+  }
+ },
+ "errors": [
+  "22:27:01 chain: eth_getLogs failed: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
+ ],
+ "rounds_started": 68,
+ "run": "20261119T180605_6232",
+ "proxy": "0x0567f2323251f0aab15c8dfb1967e4e8a7d42aee",
+ "aggregator": "0xa6e8fee84f9bd528ad71917c9ddbb1fd3214f280",
+ "minutes": 345.0,
+ "ended": "2026-11-19T23:51:09.126636+00:00"
+}
