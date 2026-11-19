@@ -1,0 +1,52 @@
+{
+ "started": "2026-11-18T18:45:46.914615+00:00",
+ "rpc_errors": 1445,
+ "rpc_calls": 113811,
+ "logs": 5918,
+ "bets": 2499,
+ "tx": 2491,
+ "heads": 43689,
+ "pool_snaps": 3474,
+ "max_poll_gap_s": 10.42,
+ "max_block_lag": 24,
+ "price": {
+  "binance_vision": {
+   "msgs": 106040,
+   "connects": 1,
+   "fails": 0,
+   "last_error": null,
+   "idle": 8
+  },
+  "okx": {
+   "msgs": 3755,
+   "connects": 1,
+   "fails": 0,
+   "last_error": null,
+   "idle": 1331
+  },
+  "bybit": {
+   "msgs": 5083,
+   "connects": 1,
+   "fails": 0,
+   "last_error": null,
+   "idle": 958
+  },
+  "gate": {
+   "msgs": 6559,
+   "connects": 1,
+   "fails": 0,
+   "last_error": null,
+   "idle": 175
+  }
+ },
+ "errors": [
+  "20:06:10 chain: eth_getLogs failed: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
+  "00:01:08 chain: eth_getLogs failed: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
+ ],
+ "rounds_started": 69,
+ "run": "20261118T184546_1341",
+ "proxy": "0x0567f2323251f0aab15c8dfb1967e4e8a7d42aee",
+ "aggregator": "0xa6e8fee84f9bd528ad71917c9ddbb1fd3214f280",
+ "minutes": 345.0,
+ "ended": "2026-11-19T00:30:50.244207+00:00"
+}
