@@ -1,0 +1,69 @@
+{
+ "started": "2026-11-21T04:45:18.785005+00:00",
+ "rpc_errors": 1995,
+ "rpc_calls": 102724,
+ "logs": 6168,
+ "bets": 2544,
+ "tx": 2544,
+ "heads": 42067,
+ "pool_snaps": 2899,
+ "max_poll_gap_s": 5.64,
+ "max_block_lag": 27,
+ "price": {
+  "binance_vision": {
+   "msgs": 330621,
+   "connects": 1,
+   "fails": 0,
+   "last_error": null
+  },
+  "okx": {
+   "msgs": 16169,
+   "connects": 1,
+   "fails": 0,
+   "last_error": null,
+   "idle": 511
+  },
+  "bybit": {
+   "msgs": 18537,
+   "connects": 1,
+   "fails": 0,
+   "last_error": null,
+   "idle": 283
+  },
+  "gate": {
+   "msgs": 13375,
+   "connects": 1,
+   "fails": 0,
+   "last_error": null,
+   "idle": 126
+  }
+ },
+ "errors": [
+  "06:16:33 chain: eth_getLogs failed: {'code': -32602, 'message': 'block range extends beyond current head block: requested 134837612, head 134837595'}",
+  "06:16:50 chain: eth_getLogs failed: {'code': -32602, 'message': 'block range extends beyond current head block: requested 134837652, head 134837648'}",
+  "06:16:57 chain: eth_getLogs failed: {'code': -32602, 'message': 'block range extends beyond current head block: requested 134837667, head 134837659'}",
+  "06:18:32 chain: eth_getLogs failed: {'code': -32602, 'message': 'block range extends beyond current head block: requested 134837877, head 134837872'}",
+  "06:18:50 chain: eth_getLogs failed: {'code': -32602, 'message': 'block range extends beyond current head block: requested 134837917, head 134837913'}",
+  "06:41:30 chain: eth_getLogs failed: {'code': -32602, 'message': 'block range extends beyond current head block: requested 134840938, head 134840934'}",
+  "06:41:35 chain: eth_getLogs failed: {'code': -32005, 'message': 'limit exceeded'}",
+  "06:45:30 chain: eth_getLogs failed: {'code': -32602, 'message': 'block range extends beyond current head block: requested 134841471, head 134841460'}",
+  "06:45:54 chain: eth_getLogs failed: {'code': -32602, 'message': 'block range extends beyond current head block: requested 134841525, head 134841520'}",
+  "06:47:18 chain: eth_getLogs failed: {'code': -32602, 'message': 'block range extends beyond current head block: requested 134841711, head 134841705'}",
+  "06:47:30 chain: eth_getLogs failed: {'code': -32602, 'message': 'block range extends beyond current head block: requested 134841738, head 134841729'}",
+  "06:47:44 chain: eth_getLogs failed: {'code': -32602, 'message': 'block range extends beyond current head block: requested 134841769, head 134841748'}",
+  "06:47:54 chain: eth_getLogs failed: {'code': -32602, 'message': 'block range extends beyond current head block: requested 134841789, head 134841774'}",
+  "06:47:59 chain: eth_getLogs failed: {'code': -32005, 'message': 'limit exceeded'}",
+  "06:48:25 chain: eth_getLogs failed: {'code': -32602, 'message': 'block range extends beyond current head block: requested 134841860, head 134841849'}",
+  "06:48:49 chain: eth_getLogs failed: {'code': -32602, 'message': 'block range extends beyond current head block: requested 134841911, head 134841900'}",
+  "06:49:19 chain: eth_getLogs failed: {'code': -32602, 'message': 'block range extends beyond current head block: requested 134841979, head 134841966'}",
+  "06:49:35 chain: eth_getLogs failed: {'code': -32602, 'message': 'block range extends beyond current head block: requested 134842016, head 134842001'}",
+  "06:51:35 chain: eth_getLogs failed: {'code': -32602, 'message': 'block range extends beyond current head block: requested 134842282, head 134842270'}",
+  "06:51:40 chain: eth_getLogs failed: {'code': -32005, 'message': 'limit exceeded'}"
+ ],
+ "rounds_started": 67,
+ "run": "20261121T044518_7391",
+ "proxy": "0x0567f2323251f0aab15c8dfb1967e4e8a7d42aee",
+ "aggregator": "0xa6e8fee84f9bd528ad71917c9ddbb1fd3214f280",
+ "minutes": 345.0,
+ "ended": "2026-11-21T10:30:22.131564+00:00"
+}
