@@ -1,0 +1,49 @@
+{
+ "started": "2026-11-24T17:18:11.456140+00:00",
+ "rpc_errors": 267,
+ "rpc_calls": 103237,
+ "logs": 5996,
+ "bets": 2530,
+ "tx": 2530,
+ "heads": 43697,
+ "pool_snaps": 2817,
+ "max_poll_gap_s": 8.39,
+ "max_block_lag": 23,
+ "price": {
+  "binance_vision": {
+   "msgs": 57947,
+   "connects": 1,
+   "fails": 0,
+   "last_error": null,
+   "idle": 41
+  },
+  "okx": {
+   "msgs": 4736,
+   "connects": 2,
+   "fails": 1,
+   "last_error": "Connection to remote host was lost.",
+   "idle": 1149
+  },
+  "bybit": {
+   "msgs": 10296,
+   "connects": 1,
+   "fails": 0,
+   "last_error": null,
+   "idle": 1056
+  },
+  "gate": {
+   "msgs": 7710,
+   "connects": 1,
+   "fails": 0,
+   "last_error": null,
+   "idle": 204
+  }
+ },
+ "errors": [],
+ "rounds_started": 68,
+ "run": "20261124T171811_9276",
+ "proxy": "0x0567f2323251f0aab15c8dfb1967e4e8a7d42aee",
+ "aggregator": "0xa6e8fee84f9bd528ad71917c9ddbb1fd3214f280",
+ "minutes": 345.0,
+ "ended": "2026-11-24T23:03:14.865313+00:00"
+}
