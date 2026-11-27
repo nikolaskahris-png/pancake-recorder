@@ -1,0 +1,73 @@
+{
+ "started": "2026-11-27T13:38:18.882643+00:00",
+ "rpc_errors": 2733,
+ "rpc_calls": 112379,
+ "logs": 6323,
+ "bets": 2688,
+ "tx": 2688,
+ "heads": 42149,
+ "pool_snaps": 3238,
+ "max_poll_gap_s": 4.64,
+ "max_block_lag": 21,
+ "price": {
+  "binance_vision": {
+   "msgs": 195987,
+   "connects": 1,
+   "fails": 0,
+   "last_error": null,
+   "idle": 1
+  },
+  "okx": {
+   "msgs": 14878,
+   "connects": 1,
+   "fails": 0,
+   "last_error": null,
+   "idle": 733
+  },
+  "bybit": {
+   "msgs": 13504,
+   "connects": 1,
+   "fails": 0,
+   "last_error": null,
+   "idle": 664
+  },
+  "gate": {
+   "msgs": 9465,
+   "connects": 1,
+   "fails": 0,
+   "last_error": null,
+   "idle": 167
+  }
+ },
+ "errors": [
+  "13:51:15 chain: eth_getLogs failed: {'code': -32602, 'message': 'block range extends beyond current head block: requested 136049649, head 136049643'}",
+  "14:31:08 chain: eth_getLogs failed: {'code': -32602, 'message': 'block range extends beyond current head block: requested 136054962, head 136054950'}",
+  "14:31:14 chain: eth_getLogs failed: {'code': -32602, 'message': 'block range extends beyond current head block: requested 136054975, head 136054960'}",
+  "14:31:43 chain: eth_getLogs failed: {'code': -32602, 'message': 'block range extends beyond current head block: requested 136055040, head 136055010'}",
+  "14:32:18 chain: eth_getLogs failed: {'message': 'You reached Public endpoint rate limit, please upgrade to paid plan', 'code': 15}",
+  "14:32:57 chain: eth_getLogs failed: {'code': -32602, 'message': 'block range extends beyond current head block: requested 136055203, head 136055193'}",
+  "14:34:34 chain: eth_getLogs failed: {'code': -32602, 'message': 'block range extends beyond current head block: requested 136055419, head 136055396'}",
+  "14:34:55 chain: eth_getLogs failed: {'code': -32602, 'message': 'block range extends beyond current head block: requested 136055465, head 136055461'}",
+  "14:35:00 chain: eth_getLogs failed: {'code': -32602, 'message': 'block range extends beyond current head block: requested 136055478, head 136055455'}",
+  "14:35:18 chain: eth_getLogs failed: {'code': -32602, 'message': 'block range extends beyond current head block: requested 136055518, head 136055460'}",
+  "14:35:31 chain: eth_getLogs failed: {'code': -32602, 'message': 'block range extends beyond current head block: requested 136055547, head 136055475'}",
+  "14:38:34 chain: eth_getLogs failed: {'code': -32602, 'message': 'block range extends beyond current head block: requested 136055952, head 136055892'}",
+  "14:39:39 chain: eth_getLogs failed: {'code': -32602, 'message': 'block range extends beyond current head block: requested 136056097, head 136056020'}",
+  "14:39:43 chain: eth_getLogs failed: {'code': -32005, 'message': 'limit exceeded'}",
+  "14:40:02 chain: eth_getLogs failed: {'message': 'You reached Public endpoint rate limit, please upgrade to paid plan', 'code': 15}",
+  "15:00:54 chain: eth_getLogs failed: {'code': -32602, 'message': 'block range extends beyond current head block: requested 136058929, head 136058917'}",
+  "15:03:33 chain: eth_getLogs failed: {'code': -32602, 'message': 'block range extends beyond current head block: requested 136059282, head 136059237'}",
+  "15:03:37 chain: eth_getLogs failed: {'code': -32005, 'message': 'limit exceeded'}",
+  "15:04:24 chain: eth_getLogs failed: {'code': -32602, 'message': 'block range extends beyond current head block: requested 136059397, head 136059380'}",
+  "15:05:28 chain: eth_getLogs failed: {'code': -32602, 'message': 'block range extends beyond current head block: requested 136059537, head 136059527'}",
+  "15:07:29 chain: eth_getLogs failed: {'code': -32602, 'message': 'block range extends beyond current head block: requested 136059806, head 136059802'}",
+  "15:12:59 chain: eth_getLogs failed: {'code': -32602, 'message': 'block range extends beyond current head block: requested 136060537, head 136060528'}",
+  "15:15:20 chain: eth_getLogs failed: {'code': -32602, 'message': 'block range extends beyond current head block: requested 136060851, head 136060845'}"
+ ],
+ "rounds_started": 70,
+ "run": "20261127T133818_1700",
+ "proxy": "0x0567f2323251f0aab15c8dfb1967e4e8a7d42aee",
+ "aggregator": "0xa6e8fee84f9bd528ad71917c9ddbb1fd3214f280",
+ "minutes": 345.0,
+ "ended": "2026-11-27T19:23:22.158666+00:00"
+}
