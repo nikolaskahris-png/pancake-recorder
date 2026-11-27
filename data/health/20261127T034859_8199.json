@@ -1,0 +1,53 @@
+{
+ "started": "2026-11-27T03:48:59.132190+00:00",
+ "rpc_errors": 7760,
+ "rpc_calls": 117423,
+ "logs": 5828,
+ "bets": 2373,
+ "tx": 2373,
+ "heads": 37654,
+ "pool_snaps": 3646,
+ "max_poll_gap_s": 4.39,
+ "max_block_lag": 13,
+ "price": {
+  "binance_vision": {
+   "msgs": 121597,
+   "connects": 1,
+   "fails": 0,
+   "last_error": null,
+   "idle": 3
+  },
+  "okx": {
+   "msgs": 5981,
+   "connects": 2,
+   "fails": 1,
+   "last_error": "Connection to remote host was lost.",
+   "idle": 1037
+  },
+  "bybit": {
+   "msgs": 4372,
+   "connects": 1,
+   "fails": 0,
+   "last_error": null,
+   "idle": 1136
+  },
+  "gate": {
+   "msgs": 7205,
+   "connects": 2,
+   "fails": 1,
+   "last_error": "'price'",
+   "idle": 201
+  }
+ },
+ "errors": [
+  "05:30:47 chain: eth_getLogs failed: {'message': 'You reached Public endpoint rate limit, please upgrade to paid plan', 'code': 15}",
+  "05:31:26 chain: eth_getLogs failed: {'message': 'You reached Public endpoint rate limit, please upgrade to paid plan', 'code': 15}",
+  "06:10:56 chain: eth_getLogs failed: {'code': -32602, 'message': 'block range extends beyond current head block: requested 135988294, head 135988293'}"
+ ],
+ "rounds_started": 69,
+ "run": "20261127T034859_8199",
+ "proxy": "0x0567f2323251f0aab15c8dfb1967e4e8a7d42aee",
+ "aggregator": "0xa6e8fee84f9bd528ad71917c9ddbb1fd3214f280",
+ "minutes": 345.0,
+ "ended": "2026-11-27T09:34:02.370118+00:00"
+}
