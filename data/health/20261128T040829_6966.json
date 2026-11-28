@@ -1,0 +1,52 @@
+{
+ "started": "2026-11-28T04:08:29.335045+00:00",
+ "rpc_errors": 2712,
+ "rpc_calls": 115058,
+ "logs": 6043,
+ "bets": 2485,
+ "tx": 2485,
+ "heads": 42398,
+ "pool_snaps": 3227,
+ "max_poll_gap_s": 4.48,
+ "max_block_lag": 11,
+ "price": {
+  "binance_vision": {
+   "msgs": 122555,
+   "connects": 1,
+   "fails": 0,
+   "last_error": null,
+   "idle": 9
+  },
+  "okx": {
+   "msgs": 7457,
+   "connects": 1,
+   "fails": 0,
+   "last_error": null,
+   "idle": 985
+  },
+  "bybit": {
+   "msgs": 8004,
+   "connects": 1,
+   "fails": 0,
+   "last_error": null,
+   "idle": 1101
+  },
+  "gate": {
+   "msgs": 7866,
+   "connects": 1,
+   "fails": 0,
+   "last_error": null,
+   "idle": 229
+  }
+ },
+ "errors": [
+  "05:46:41 chain: eth_getLogs failed: {'code': -32602, 'message': 'block range extends beyond current head block: requested 136176979, head 136176976'}",
+  "07:01:30 chain: eth_getLogs failed: {'code': -32602, 'message': 'block range extends beyond current head block: requested 136186951, head 136186949'}"
+ ],
+ "rounds_started": 69,
+ "run": "20261128T040829_6966",
+ "proxy": "0x0567f2323251f0aab15c8dfb1967e4e8a7d42aee",
+ "aggregator": "0xa6e8fee84f9bd528ad71917c9ddbb1fd3214f280",
+ "minutes": 345.0,
+ "ended": "2026-11-28T09:53:32.595742+00:00"
+}
